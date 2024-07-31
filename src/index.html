@@ -1,23 +1,29 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/search_bar.js"></script>
   <link href="./output.css" rel="stylesheet">
+  <title>Pablo Luis Molina Blanes</title>
 </head>
 <body>
+  <input class="border-2" type="text"></input>
+  <button class="border-4 bg-slate-200" onclick="search(document.getElementsByTagName('input')[0].value)" type="button">Search</button>
   <div id="hero-section" class="gap-5">
     <div class="grid grid-cols-1 place-items-center">
-      <img class="size-72 col-span-1" src="../public/PabloLuisMolinaBlanes.jpeg">
+      <img alt="Fotografía de perfil" class="size-72 col-span-1" src="../public/PabloLuisMolinaBlanes.jpeg">
     </div>
-    <h1 class="text-2xl font-bold shadow-sm font-mono text-center text-orange-600">
+    <h1 class="text-2xl font-bold font-mono text-center text-orange-600">
       Landing page de Pablo Luis Molina Blanes.
     </h1>
-    <h2 class="bg-slate-200 text-base font-bold shadow-sm font-mono text-center gap-5">
-      Estudiante de Ingeniería de Software en la Universidad de Málaga. Con experiencia en HTML, CSS, JavaScript, TailWindCSS, Node, Express y React
-    </h2>
+    <div class="grid grid-cols-1 place-items-center">
+      <h2 class="bg-slate-200 w-3/4 text-base font-bold shadow-sm font-mono text-center gap-20">
+        Estudiante de Ingeniería de Software en la Universidad de Málaga. Con experiencia en HTML, CSS, JavaScript, TailWindCSS, Node, Express y React
+      </h2>
+    </div>
   </div>
-  <div class="grid grid-rows-5 grid-flow-row gap-20">
+  <div class="grid grid-rows-5 grid-flow-row gap-10">
     <div class="flex flex-col gap-5">
     <h2 class="font-mono text-xl font-bold text-blue-600">
       My value as a developer
@@ -34,7 +40,8 @@
     <h2 class="font-mono shadow-sm text-xl font-bold text-blue-600">
       Professional and educational accomplishments
     </h2>
-    <p class="font-serif text-lg">Lorem Ipsum Dolor Sit Amet</p>
+    <p class="font-serif text-lg">I have completed a Formación Profesional Dual (a form of vocational school in Spain) course in Desarrollo de Aplicaciones Multiplataforma (Cross-platform software development) where I did a 6-month internship with the company Properly</p>
+    <p class="font-serif text-lg">I am currently studying a Software Engineering undergraduate degree in Universidad de Málaga</p>
   </div>
   <div class="flex flex-col gap-5">
     <h2 class="font-mono shadow-sm text-xl font-bold text-blue-600">
@@ -46,13 +53,14 @@
     <h2 class="font-mono shadow-sm text-xl font-bold text-blue-600">
       My social media
     </h2>
-    <p class="font-serif text-lg">Lorem Ipsum Dolor Sit Amet</p>
+    <p class="font-serif text-lg">Check out my GitHub down in the footer!</p>
+    <p class="font-serif text-lg">Linkedin: <a class="text-blue-800 hover:text-black" href="https://www.linkedin.com/in/pablo-luis-molina-blanes/">here</a></p>
   </div>
   <div class="bg-slate-800 grid grid-cols-1 place-items-center" id="footer">
     <h1 class="font-mono text-2xl font-bold text-white">Footer</h1>
     <div id="copyright-and-others" class="flex flex-col">
       <p class="text-slate-200">This project is licensed under the MIT license</p>
-      <p class="text-slate-200 text-center">Links: <a class="text-blue-800" href="https://github.com/PabloLuisMolinaBlanes">GitHub</a></p>
+      <p class="text-slate-200 text-center">Links: <a class="text-blue-800 hover:text-white" href="https://github.com/PabloLuisMolinaBlanes">GitHub</a></p>
     </div>
   </div>
 </div>
